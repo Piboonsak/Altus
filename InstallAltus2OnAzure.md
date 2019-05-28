@@ -12,6 +12,7 @@
  - [ ] src/createDB.sh
 
 - [Check grant user by](https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_mysql.html#concept_dsg_3mq_bl)
+
 'SHOW GRANTS FOR '<user>'@'%';'
 
 
@@ -20,8 +21,9 @@
 [Using MySQL for Cloudera Director Server](https://www.cloudera.com/documentation/director/2-8-x/topics/director_use_ext_db_for_director_data.html#xd_583c10bfdbd326ba-590cb1d1-149e9ca9886--6fb9)
 
 - copy file src/etc/cloudera-director-server/application.properties to path /etc/cloudera-director-server/
-
+'mv /etc/cloudera-director-server/application.properties /etc/cloudera-director-server/application.properties.bk'
 'cp src/etc/cloudera-director-server/application.properties /etc/cloudera-director-server/'
+
 
 ### Stop Director when install DB
 
