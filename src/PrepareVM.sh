@@ -8,5 +8,5 @@ yum install -y nano
 
 yum install -y git
 
-yum install -y mysql-server
+### [Install mysql Follow this Link](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-7)
 
