@@ -20,6 +20,7 @@ sudo yum install mysql-server
 
 sudo systemctl status mysqld
 
-[root@altus ~]# sudo grep 'temporary password' /var/log/mysqld.log
-2019-05-28T04:18:12.811710Z 1 [Note] A temporary password is generated for root@localhost: JFqL6TWaxr#n
+sudo grep 'temporary password' /var/log/mysqld.log
+
+##output should be 2019-05-28T04:18:12.811710Z 1 [Note] A temporary password is generated for root@localhost: JFqL6TWaxr#n
 
