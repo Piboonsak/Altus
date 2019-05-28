@@ -2,7 +2,8 @@
 
 ## [Step 1.Configuring Storage for Cloudera Director](https://www.cloudera.com/documentation/director/2-8-x/topics/director_storage.html)
 
-### Mysql for director
+### [Mysql for director](https://www.cloudera.com/documentation/director/2-8-x/topics/director_use_ext_db_for_director_data.html#concept_r2g_z3y_f2b)
+
 -Run file 
  - [ ] src/PrepareVM.sh
  - [ ] src/PrepareMysqlDB.sh
