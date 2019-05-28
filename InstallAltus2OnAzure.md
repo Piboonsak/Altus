@@ -6,7 +6,7 @@
 -Run file 
  - [ ] src/PrepareVM.sh
  - [ ] src/PrepareMysqlDB.sh
-
+ - [ ] src/createDB.sh
 
 ### [Configuring Cloudera Director Server to use the MySQL Database](https://www.cloudera.com/documentation/director/2-8-x/topics/director_use_ext_db_for_director_data.html#config_director_to_use_mysql)
 
