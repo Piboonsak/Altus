@@ -25,7 +25,7 @@
 'cp src/etc/cloudera-director-server/application.properties /etc/cloudera-director-server/'
 
 
-### Stop Director when install DB
+### [Stop Director when install DB](https://www.cloudera.com/documentation/director/2-8-x/topics/director_use_ext_db_for_director_data.html#concept_sdr_djy_f2b)
 
 DELETE FROM AUTHORITIES;<br>
 DELETE FROM USERS;<br>
