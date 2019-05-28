@@ -1,0 +1,17 @@
+// replace the zone name (`cdh-cluster.internal`) with with the internal host FQDN suffix 
+// you want to use for your cluster network. (This option is exposed in Director.)
+zone "cdh-cluster.internal" IN {
+    type master;
+    file "/etc/named/zones/db.internal";
+    // replace with your subnet
+    allow-update { 10.3.0.0/16; };
+};
+
+// replace the zone name (`0.3.10.in-addr.arpa`) with the network component of your subnet, reversed
+// (example: with a subnet definition of 10.3.0.0/24, the reversed subnet component would be 0.3.10)
+zone "0.3.10.in-addr.arpa" IN {
+    type master;
+    file "/etc/named/zones/db.reverse";
+    // replace with your subnet
+    allow-update { 10.3.0.0/16; };
+ };
