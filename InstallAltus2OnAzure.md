@@ -11,6 +11,8 @@
 
 ### [Configuring Cloudera Director Server to use the MySQL Database](https://www.cloudera.com/documentation/director/2-8-x/topics/director_use_ext_db_for_director_data.html#config_director_to_use_mysql)
 
+[Using MySQL for Cloudera Director Server](https://www.cloudera.com/documentation/director/2-8-x/topics/director_use_ext_db_for_director_data.html#xd_583c10bfdbd326ba-590cb1d1-149e9ca9886--6fb9)
+
 - copy file src/etc/cloudera-director-server/application.properties to path /etc/cloudera-director-server/
 
 'cp src/etc/cloudera-director-server/application.properties /etc/cloudera-director-server/'
@@ -29,9 +31,23 @@ mysql -u [user] -p director < directorexport.sql
 
 ## [Installing Cloudera Director Server and Client on Azure ](https://www.cloudera.com/documentation/director/2-8-x/topics/director_get_started_azure_install_director.html#concept_yrw_jwc_mw)
 
-### Install JDK
+### [Install JDK](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora)
 'sudo yum install java-1.8.0-openjdk-devel'
+
+#### Set JAVA_HOME in .bashrc
+add last line of file
+
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jre
+
+[root@altus ~]# source .bashrc
+[root@altus ~]# echo $JAVA_HOME
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jre
+
 
 ### Add the Cloudera Director repository to the package manager:
 'cd /etc/yum.repos.d/'
 'sudo wget "https://archive.cloudera.com/director/redhat/7/x86_64/director/cloudera-director.repo" '
+
+'sudo yum install cloudera-director-server cloudera-director-client'
+
+
