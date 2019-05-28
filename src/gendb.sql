@@ -1,4 +1,4 @@
-CREATE USER director IDENTIFIED BY P@ssw0rd;
+CREATE USER director IDENTIFIED BY 'P@ssw0rd';
 
 CREATE DATABASE directorexport CHARACTER SET utf8;
 GRANT ALL PRIVILEGES ON directorexport.* TO 'director'@'%';
