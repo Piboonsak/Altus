@@ -44,8 +44,10 @@ export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jr
 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jre
 
 
-### Add the Cloudera Director repository to the package manager:
+### [Add the Cloudera Director repository to the package manager:](https://www.cloudera.com/documentation/director/2-8-x/topics/director_get_started_azure_install_director.html#concept_mdy_1jj_mw)
+
 'cd /etc/yum.repos.d/'
+
 'sudo wget "https://archive.cloudera.com/director/redhat/7/x86_64/director/cloudera-director.repo" '
 
 'sudo yum install cloudera-director-server cloudera-director-client'
