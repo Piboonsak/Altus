@@ -26,3 +26,12 @@ DELETE FROM SERVER_CONFIGS;<br>
 mysqldump -u [user] -p --no-create-info directorexport > directorexport.sql
 
 mysql -u [user] -p director < directorexport.sql
+
+## [Installing Cloudera Director Server and Client on Azure ](https://www.cloudera.com/documentation/director/2-8-x/topics/director_get_started_azure_install_director.html#concept_yrw_jwc_mw)
+
+### Install JDK
+'sudo yum install java-1.8.0-openjdk-devel'
+
+### Add the Cloudera Director repository to the package manager:
+'cd /etc/yum.repos.d/'
+'sudo wget "https://archive.cloudera.com/director/redhat/7/x86_64/director/cloudera-director.repo" '
