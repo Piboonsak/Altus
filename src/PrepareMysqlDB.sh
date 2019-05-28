@@ -5,6 +5,7 @@ sudo service mysqld stop
 
 ### Create slow log for mysql
 mkdir -p /var/log/mysql-slow.log
+chown mysql:mysql /var/log/mysql-slow.log
 
 ### After Stop Mysql server
 mkdir -p /var/lib/mysql/bk
