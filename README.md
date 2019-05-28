@@ -1,1 +1,1 @@
-# Cloudera Altus Director 6.2.x
+# Cloudera Altus Director 2.8.x
