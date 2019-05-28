@@ -4,10 +4,16 @@
 
 ### [Mysql for director](https://www.cloudera.com/documentation/director/2-8-x/topics/director_use_ext_db_for_director_data.html#concept_r2g_z3y_f2b)
 
+(/etc/cloudera-director-server/)
+
 -Run file 
  - [ ] src/PrepareVM.sh
  - [ ] src/PrepareMysqlDB.sh
  - [ ] src/createDB.sh
+
+- [Check grant user by](https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_mysql.html#concept_dsg_3mq_bl)
+'SHOW GRANTS FOR '<user>'@'%';'
+
 
 ### [Configuring Cloudera Director Server to use the MySQL Database](https://www.cloudera.com/documentation/director/2-8-x/topics/director_use_ext_db_for_director_data.html#config_director_to_use_mysql)
 
