@@ -51,6 +51,9 @@ export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jr
 [root@altus ~]# echo $JAVA_HOME
 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jre
 
+### Stop firewall
+'sudo systemctl disable firewalld'
+'sudo systemctl stop firewalld'
 
 ### [Add the Cloudera Director repository to the package manager:](https://www.cloudera.com/documentation/director/2-8-x/topics/director_get_started_azure_install_director.html#concept_mdy_1jj_mw)
 
@@ -60,4 +63,4 @@ export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jr
 
 'sudo yum install cloudera-director-server cloudera-director-client'
 
-
+'sudo service cloudera-director-server start'
