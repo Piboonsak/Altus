@@ -8,3 +8,5 @@ yum install -y nano
 
 yum install -y git
 
+yum install -y mysql-server
+
