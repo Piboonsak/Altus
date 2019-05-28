@@ -1,0 +1,20 @@
+$ORIGIN .
+$TTL 600  ; 10 minutes
+; replace `0.5.10.in-addr.arpa` with the the network component of your subnet, reversed (the zone name defined in /etc/named/named.conf.local)
+; replace `director.cdh-cluster.internal` with the internal fqdn of the primary name server; note the trailing period (.)
+; replace `hostmaster.cdh-cluster.internal` with the hostmaster email address, represented with only periods (.), by convention this is `hostmaster.<your fqdn suffix>`; note the trailing period (.)
+0.5.10.in-addr.arpa  IN SOA  director.cdh-cluster.internal. hostmaster.cdh-cluster.internal. (
+        10     ; serial
+        600    ; refresh (10 minutes)
+        60     ; retry (1 minute)
+        604800   ; expire (1 week)
+        600    ; minimum (10 minutes)
+        )
+      ; replace `director.cdh-cluster.internal` with the internal fqdn of your primary name server; note the trailing period (.)
+      NS  director.cdh-cluster.internal.
+
+; replace `0.5.10.in-addr.arpa` with the the network component of your subnet, reversed (the zone name defined in /etc/named/named.conf.local)
+$ORIGIN 0.5.10.in-addr.arpa.
+; replace `4` with the host number of the private IP of your DNS host
+; replace `director.cdh-cluster.internal` with the internal fqdn of your primary name server 
+4      PTR  director.cdh-cluster.internal.
