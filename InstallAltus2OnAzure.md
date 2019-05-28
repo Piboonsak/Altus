@@ -10,8 +10,9 @@
 
 ### [Configuring Cloudera Director Server to use the MySQL Database](https://www.cloudera.com/documentation/director/2-8-x/topics/director_use_ext_db_for_director_data.html#config_director_to_use_mysql)
 
+- copy file src/etc/cloudera-director-server/application.properties to path /etc/cloudera-director-server/
 
-
+'cp src/etc/cloudera-director-server/application.properties /etc/cloudera-director-server/'
 
 ### Stop Director when install DB
 
@@ -20,4 +21,7 @@ DELETE FROM USERS;<br>
 DELETE FROM SERVER_CONFIGS;<br>
 
 #### Run command to dump DB
+
 mysqldump -u [user] -p --no-create-info directorexport > directorexport.sql
+
+mysql -u [user] -p director < directorexport.sql
