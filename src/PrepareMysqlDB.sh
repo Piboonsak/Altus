@@ -25,7 +25,8 @@ sudo /usr/bin/mysql_secure_installation
 ###Installing the MySQL JDBC Driver
 #### Download file
 
-wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.47.tar.gz
+#wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.47.tar.gz
+cp ..src/mysql-connector-java-5.1.47.tar.gz /root
 tar zxvf mysql-connector-java-5.1.47.tar.gz
 
 ### 
